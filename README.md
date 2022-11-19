@@ -8,7 +8,7 @@ This is a README that contains details about this repository.
 ##Ubuntu_commands:
 
 A text file that is full of linux commands and explanations.
-For more info search the command and its parameters on the internet.
+For more info, search the command and its parameters on the internet.
 
 ##Ubuntu_shortcuts
 
