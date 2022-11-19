@@ -2,6 +2,10 @@
 CTRL+ALT+T==terminal
 CTRL+SHIFT+T==new terminal window
 ALT+number==navigation through terminals
+CTRL+A/E==cursor to start/end of line
+CTRL+U/K==delete to left/right of the cursor
+CTRL+W==delete word to the left
+CTRL+R==reverse search history
 CTRL+L==clears terminal
 CTRL+D==quiting 1 terminal window
 CTRL+SHIFT+C/V/Q==copy,paste,quit in terminal
