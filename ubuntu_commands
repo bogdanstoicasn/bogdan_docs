@@ -50,11 +50,11 @@ top/htop/glances - View active processes live with their system usage
 useradd and usermod - Add new user or change existing users data
 passwd - Create or update passwords for existing users
 ~/.zshrc - unde se afla tema de la zsh si se poate modifica
-sensors - vedem temperatura
-free - vedem cata memorie este disponibila
-who - afiseaza utilizatorii prezenti in sistem
+sensors - show temperature
+free - shows free memory
+who - shows the users in the system
 which - identifies the executable file of an app
-dpkg -s nume_pachet - cauta daca e instalat un pachet
+dpkg -s nume_pachet - search if package installed on system
 ps -e | grep bash - processes created in bash
 kill -KILL - process killer
 pidof (proces) - shows the number of proces if it exists
@@ -62,14 +62,14 @@ dhclient eth1 - gets IP address in a dynamic way
 ip address show - shows us the configuration of an IP address
 ip address flush eth1 - delet the IP address from a command line interface
 netstat - shows the open ports in which an app communicates
-scp fisier user@ipaddress: fisier - transmite fisiere pe retea si functioneaza ca cp
+scp fisier user@ipaddress: fisier - sends file on network, works like "cp"
 du -sh - shows size of file readable by humans
 du -bsh * - shows size of all files in directory
 tar cvf/xvf/rvf - makes/extract/add to archive
 tar xvf --directory= - exract archive to that directory
 tar tf - shows files in archive
-tar file.tar * - baga toate fisierele din folderul curent in arhiva
-tar -czvf - arhivare gz din cauza operatorului z
+tar file.tar * - puts all the files located from that folder into an archive
+tar -czvf - makes gz archive because of "z"
 file - shows type of file
 wc - word count, as the name implies, it is mainly used for counting purpose
 ip address flush - delets an ip address from an interface
@@ -85,4 +85,4 @@ sudo netstat -tlpn - shows open ports
 
 
 
-sudo add-apt-repository --remove ppa:mc3man/trusty-media = pentru update daca nu merge
+sudo add-apt-repository --remove ppa:mc3man/trusty-media = for update if not working merge
