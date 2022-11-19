@@ -72,6 +72,12 @@ tar file.tar * - baga toate fisierele din folderul curent in arhiva
 tar -czvf - arhivare gz din cauza operatorului z
 file - shows type of file
 wc - word count, as the name implies, it is mainly used for counting purpose
+ip address flush - delets an ip address from an interface
+ip link set dev name up - starting the  interface called "name"
+ip route show - identifies the gateway
+nmcli dev show | grep DNS - identifies the DNS service
+host name - verify the functionality of DNS
+sudo netstat -tlpn - shows open ports
 
 
 
