@@ -78,9 +78,30 @@ ip route show - identifies the gateway
 nmcli dev show | grep DNS - identifies the DNS service
 host name - verify the functionality of DNS
 sudo netstat -tlpn - shows open ports
+tr char 'your input char' - delete/convert/manipulation of characters given at input
+sed - string editor (works like 'tr')
+cut - extract info structured by lines and coloumns
+awk - same as 'cut' but more functionalities
+sort - is sorting the file in ascendent order
 
 
 
+						Expressions
+					
+^ - beginning of line
+$ - end of line
+. - every character
+[ajt] - every character from this set
+[^ajt] - every character who differs from this set
+a+ - the 'a' character one time or more
+\ - used with ^,$,. etc to keep their special role in expressions
+ 	
+				
+ 						Scripts
+ 				
+ #!bin/bash		
+$0 - name of script
+$num - first/second/... command
 
 
 
