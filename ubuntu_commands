@@ -1,87 +1,172 @@
 					COMMANDS UBUNTU
+
 ls - The most frequently used command in Linux to list directories
+
 pwd - Print working directory command in Linux
+
 cd - Linux command to navigate through directories
+
 mkdir - Command used to create directories in Linux
+
 mv - Move or rename files in Linux
+
 cp - Similar usage as mv but for copying files in Linux
+
 rm - Delete files or directories
+
 touch - Create blank/empty files
+
 ln - Create symbolic links (shortcuts) to other files
+
 cat - Display file contents on the terminal
+
 clear - Clear the terminal display
+
 echo - Print any text that follows the command
+
 less - Linux command to display paged outputs in the terminal
+
 man - Access manual pages for all Linux commands
+
 uname - Linux command to get basic information about the OS
+
 whoami - Get the active username
+
 tar - Command to extract and compress files in Linux
+
 grep - Search for a string within an output
+
 head - Return the specified number of lines from the top
+
 tail - Return the specified number of lines from the bottom
+
 diff - Find the difference between two files
+
 cmp - Allows you to check if two files are identical
+
 comm - Combines the functionality of diff and cmp
+
 sort - Linux command to sort the content of a file while outputting
+
 export - Export environment variables in Linux
+
 zip - Zip files in Linux
+
 unzip - Unzip files in Linux
+
 ssh - Secure Shell command in Linux
+
 service - Linux command to start and stop services
+
 ps - Display active processes
+
 kill and killall - Kill active processes by process ID or name
+
 df - Display disk filesystem information
+
 mount - Mount file systems in Linux
+
 chmod - Command to change file permissions
+
 chown - Command for granting ownership of files or folders
+
 ifconfig - Display network interfaces and IP addresses
+
 traceroute - Trace all the network hops to reach the destination
+
 wget - Direct download files from the internet
+
 ufw - Firewall command
+
 iptables - Base firewall for all other firewall utilities to interface with
+
 apt, pacman, yum, rpm - Package managers depending on the distro
+
 sudo - Command to escalate privileges in Linux
+
 cal - View a command-line calendar
+
 alias - Create custom shortcuts for your regularly used commands
+
 dd - Majorly used for creating bootable USB sticks
+
 whereis - Locate the binary, source, and manual pages for a command
+
 whatis - Find what a command is used for
+
 top/htop/glances - View active processes live with their system usage 
+
 useradd and usermod - Add new user or change existing users data
+
 passwd - Create or update passwords for existing users
+
 ~/.zshrc - unde se afla tema de la zsh si se poate modifica
+
 sensors - show temperature
+
 free - shows free memory
+
 who - shows the users in the system
+
 which - identifies the executable file of an app
+
 dpkg -s nume_pachet - search if package installed on system
+
+
 ps -e | grep bash - processes created in bash
+
 kill -KILL - process killer
+
 pidof (proces) - shows the number of proces if it exists
+
 dhclient eth1 - gets IP address in a dynamic way
+
 ip address show - shows us the configuration of an IP address
+
 ip address flush eth1 - delet the IP address from a command line interface
+
 netstat - shows the open ports in which an app communicates
+
 scp fisier user@ipaddress: fisier - sends file on network, works like "cp"
+
 du -sh - shows size of file readable by humans
+
 du -bsh * - shows size of all files in directory
+
 tar cvf/xvf/rvf - makes/extract/add to archive
+
 tar xvf --directory= - exract archive to that directory
+
 tar tf - shows files in archive
+
 tar file.tar * - puts all the files located from that folder into an archive
+
 tar -czvf - makes gz archive because of "z"
+
 file - shows type of file
+
 wc - word count, as the name implies, it is mainly used for counting purpose
+
 ip address flush - delets an ip address from an interface
+
 ip link set dev name up - starting the  interface called "name"
+
 ip route show - identifies the gateway
+
 nmcli dev show | grep DNS - identifies the DNS service
+
 host name - verify the functionality of DNS
+
 sudo netstat -tlpn - shows open ports
+
 tr char 'your input char' - delete/convert/manipulation of characters given at input
+
 sed - string editor (works like 'tr')
+
 cut - extract info structured by lines and coloumns
+
 awk - same as 'cut' but more functionalities
+
 sort - is sorting the file in ascendent order
 
 
@@ -89,21 +174,72 @@ sort - is sorting the file in ascendent order
 						Expressions
 					
 ^ - beginning of line
+
 $ - end of line
+
 . - every character
+
 [ajt] - every character from this set
+
 [^ajt] - every character who differs from this set
+
 a+ - the 'a' character one time or more
+
 \ - used with ^,$,. etc to keep their special role in expressions
  	
 				
  						Scripts
  				
  #!bin/bash		
+
 $0 - name of script
+
 $num - first/second/... command
 
 
 
 
 sudo add-apt-repository --remove ppa:mc3man/trusty-media = for update if not working merge
+
+
+						Git 
+						
+git log - shows entries in a repository
+
+gpg --full-generate-key - generates key
+
+gpg --list-public-keys - your public key 
+
+gpg --list-secret-keys - your private key
+
+gpg --armor --export ${YOUR_MAIL_GOES_HERE} - to export the public key
+
+gpg --list-secret-keys - get your private key fingerprint (long upper case hexstring)
+ 
+git config --global user.signingkey ${PRIVATE_KEY_FINGERPRINT} - configure your default signing key (git user.{name,email} must match those in key)
+
+git config --global commit.gpgsign true - enable autosigning
+
+git commit -s/m - to make commits
+
+git branch feature - create a new branch from HEAD
+ 
+git checkout feature - switch to the feature branch
+
+git branch - check that the branch you are on is actually feature and not master
+
+git rebase feature - apply the extra commits from feature onto master
+
+git rebase --continue - continue the rebase process
+
+git rebase --abort - alternatively, you can just give up and go back to how things were (no harm done)
+
+git push -d origin feature - delete feature branch on remote (origin)
+
+git branch -d feature - delete feature branch locally
+
+git rebase -i HEAD~2 - launch git rebase in interactive mode (-i) and tell it we want to revisit the last 2 commits relative to our head
+
+git reset HEAD~1 - revert the changes made with this commit ==> files no longer added in staging area
+
+git status - shows status of commits
