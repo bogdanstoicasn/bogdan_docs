@@ -243,3 +243,5 @@ git rebase -i HEAD~2 - launch git rebase in interactive mode (-i) and tell it we
 git reset HEAD~1 - revert the changes made with this commit ==> files no longer added in staging area
 
 git status - shows status of commits
+
+gpg --delete-secret-keys - deleting gpg key 
